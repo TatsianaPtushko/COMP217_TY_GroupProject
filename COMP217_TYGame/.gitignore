@@ -74,4 +74,5 @@ Plugins/*/Intermediate/*
 DerivedDataCache/*
 
 # Imported assets
-Kraken/*
+Content/Kraken/Textures/
+StarterContent/Textures
