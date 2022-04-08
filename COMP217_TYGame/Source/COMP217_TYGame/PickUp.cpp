@@ -25,3 +25,8 @@ void APickUp::Tick(float DeltaTime)
 
 }
 
+void APickUp::GetHealth(float healthRecover)
+{
+	
+
+}

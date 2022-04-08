@@ -15,6 +15,12 @@ public:
 	// Sets default values for this actor's properties
 	APickUp();
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Health")
+		float healthRecover;
+
+	UFUNCTION(BlueprintCallable, Category = "Health")
+		void GetHealth(float health);
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
