@@ -19,6 +19,7 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Speed")
 		float speed;
 
+	// method
 	UFUNCTION(BlueprintCallable, Category = "Action")
 		void moveUp();
 

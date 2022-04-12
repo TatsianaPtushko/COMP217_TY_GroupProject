@@ -25,6 +25,7 @@ void AElevatorPlatform::Tick(float DeltaTime)
 
 }
 
+// move method
 void AElevatorPlatform::moveUp()
 {
 	FVector height = GetActorLocation();
