@@ -4,16 +4,23 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
-#include "PickUp.generated.h"
+#include "ElevatorPlatform.generated.h"
 
 UCLASS()
-class COMP217_TYGAME_API APickUp : public AActor
+class COMP217_TYGAME_API AElevatorPlatform : public AActor
 {
 	GENERATED_BODY()
 	
 public:	
 	// Sets default values for this actor's properties
-	APickUp();
+	AElevatorPlatform();
+
+	// properties
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Speed")
+		float speed;
+
+	UFUNCTION(BlueprintCallable, Category = "Action")
+		void moveUp();
 
 protected:
 	// Called when the game starts or when spawned
